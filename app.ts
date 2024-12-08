@@ -2,16 +2,14 @@
 //     name: string;
 //     age: number;
 // } = {
-const person:{
-    name: string,
-    age: number,
-    hobbies: string[],
-    role: [number, string],
-} = {
+
+enum Role { ADMIN = 'ADMIN', READ_ONLY = '100', AUTHOR = 'AUTHOR' }
+
+const person = {
     name: 'geumdam',
     age: 35,
     hobbies:['Sports', 'Cocking'],
-    role: [2, 'author'],
+    role: Role.ADMIN,
 };
 
 // person.role.push('admin');
